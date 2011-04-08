@@ -1,0 +1,270 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Asturix People\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2011-04-02 21:10+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Luis Iván Cuende García <luisivan@luisivan.net>\n"
+"Language-Team: Asturix <contacto@asturix.com>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Language: Spanish\n"
+"X-Poedit-SourceCharset: utf-8\n"
+"X-Poedit-Basepath: /home/luisivan/dev/asturix/people/backup/people/\n"
+"X-Poedit-SearchPath-0: /home/luisivan/dev/asturix/people/backup/people\n"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:16
+msgid "Hot"
+msgstr "Caliente"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:17
+msgid "Last"
+msgstr "Últimas"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:18
+msgid "Approved"
+msgstr "Aprobadas"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:19
+msgid "Search..."
+msgstr "Buscar..."
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:25
+msgid "User"
+msgstr "Usuario"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:26
+msgid "Pass"
+msgstr "Contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:27
+msgid "Login"
+msgstr "Entrar"
+
+#: /home/luisivan/dev/asturix/people/backup/people/index.php:27
+msgid "Forgot password?"
+msgstr "¿Contraseña perdida?"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:12
+msgid "Edit idea"
+msgstr "Editar idea"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:14
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/newIdea.php:6
+msgid "Title"
+msgstr "Título"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:15
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/newIdea.php:7
+msgid "Category"
+msgstr "Categoría"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:30
+msgid "Open"
+msgstr "Abierto"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:33
+msgid "Closed"
+msgstr "Cerrado"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:36
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/newIdea.php:14
+msgid "Description"
+msgstr "Descripción"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/editIdea.php:37
+msgid "Update idea!"
+msgstr "¡Actualizar idea!"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/last.php:7
+msgid "Last ideas"
+msgstr "Últimas ideas"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/search.php:8
+msgid "Search results for "
+msgstr "Resultados de búsqueda para "
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/search.php:20
+msgid "No results for ideas"
+msgstr "Sin resultados para ideas"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/search.php:35
+msgid "No results for accounts"
+msgstr "Sin resultados para usuarios"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/approved.php:7
+msgid "Approved ideas"
+msgstr "Ideas aprobadas"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/voteIdeaUp.php:10
+msgid "This idea is closed"
+msgstr "Esta idea está cerrada"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/voteIdeaUp.php:17
+msgid "You can vote only one time!"
+msgstr "¡Sólo puedes votar una vez!"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/voteIdeaUp.php:23
+msgid "You must be registered to vote"
+msgstr "Debes estar registrado para votar"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/newIdea.php:4
+msgid "New idea"
+msgstr "Nueva idea"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/newIdea.php:15
+msgid "Send idea!"
+msgstr "Enviar idea"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/hot.php:7
+msgid "Hot ideas"
+msgstr "Ideas calientes"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:4
+msgid "Edit profile"
+msgstr "Editar perfil"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:6
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:6
+msgid "Username"
+msgstr "Usuario"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:7
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:9
+msgid "Email"
+msgstr "Email"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:8
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:10
+msgid "Name"
+msgstr "Nombre"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:9
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:11
+msgid "Photo URL (70x70px)"
+msgstr "URL de la foto (70x70px)"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:10
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:12
+msgid "Something about you"
+msgstr "Algo sobre ti"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:11
+msgid "Update profile"
+msgstr "Actualizar perfil"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:12
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/password.php:4
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/password.php:9
+msgid "Change password"
+msgstr "Cambiar contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/profile.php:13
+msgid "Delete profile"
+msgstr "Borrar perfil"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/forgotForm.php:4
+msgid "Recover password"
+msgstr "Recuperar contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:4
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:13
+msgid "Sign up"
+msgstr "Registrar"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:7
+msgid "Password"
+msgstr "Contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/signupForm.php:8
+msgid "Repear your password"
+msgstr "Repite tu contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/password.php:6
+msgid "New Password"
+msgstr "Nueva contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/ajax/password.php:8
+msgid "Repeat the password"
+msgstr "Repite tu contraseña"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/db.php:51
+msgid "Hey this username is already in use!"
+msgstr "¡Este usuario ya está en uso!"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/db.php:57
+msgid "Hey this email is already in use!"
+msgstr "¡Este email ya está en uso!"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/ui.php:20
+msgid "[Closed]"
+msgstr "[Cerrada]"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/ui.php:25
+msgid "[Approved]"
+msgstr "[Aprobada]"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/ui.php:35
+msgid "Delete idea"
+msgstr "Borrar idea"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:19
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:40
+msgid "Incorrect user or password"
+msgstr "Usuario o contraseña incorrecta"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:48
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:68
+msgid "Incorrect email or hash"
+msgstr "Email o hash incorrecto"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:88
+msgid "Logout"
+msgstr "Salir"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:94
+msgid "There was an error. Your username or your email may be registered"
+msgstr "Ha habido un error. Tu usuario o email debe haber sido usado ya"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:96
+msgid "Thanks! You are now registered! Check your mail!"
+msgstr "¡Gracias! ¡Ya estás registrado! ¡Mira tu email!"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:102
+msgid "There was an error. The username or email you wants may be registered"
+msgstr "Ha habido un error. Tu usuario o email debe haber sido usado ya"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:104
+msgid "Thanks! Your profile is now updated! Your new username is: "
+msgstr "¡Tu perfil está actualizado! Tu nuevo nombre de usuario es: "
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:104
+msgid "and your new password is "
+msgstr "y tu nueva contraseña es "
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:113
+msgid "Your "
+msgstr "Tu "
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:113
+msgid " password"
+msgstr "contraseña "
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:114
+msgid "If you have lost your "
+msgstr "Si has perdido tu "
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:114
+msgid " password, you can recover it clicking the following link: "
+msgstr " contraseña, puedes recuperarla pulsando en el siguiente enlace: "
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:122
+msgid "Check your mail!"
+msgstr "¡Mira tu email!"
+
+#: /home/luisivan/dev/asturix/people/backup/people/libs/auth.php:124
+msgid "Hey cowboy, the thing you are trying is forbidden"
+msgstr "Hey cowboy, lo que estás intentando hacer está prohibido"
+

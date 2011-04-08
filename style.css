@@ -1,0 +1,427 @@
+html {height:100%}
+body {
+  background:#fff;
+  /*font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;*/
+  font-family: Geneva, "MS Sans Serif", sans-serif;
+  font-size:12px;
+  color:#353735;
+  margin:0;
+  padding:0;
+  height:100%;
+  /*overflow:hidden;*/
+}
+
+img {
+  border:none;
+}
+
+#header {
+  /*position:absolute;
+  top:0;
+  left:0;
+  z-index:10;*/
+  margin:0;
+  width:100%;
+  background:#32AA32;
+  padding:3px 0;
+  height:30px;
+  min-width:960px;
+}
+
+#header button {
+  /*border-radius:0px;*/
+  background:transparent;
+  /*color:#353735;*/
+}
+
+#header button:hover {
+  background:#139113;
+}
+
+#wrapper {
+  margin: 0 auto;
+  min-width:960px;
+  max-width:1400px;
+  padding: 0 10px;
+  margin-bottom:10px;
+}
+
+#content {
+  min-width:680px;
+  margin-right:250px;
+}
+
+#content h1 {
+  background:#86DF86;
+}
+
+#sidebar {
+  float:right;
+  width:240px;
+  background:#86DF86;
+  margin:0;
+  padding:3px;
+  color:#000;
+}
+
+#sidebar label {
+  color:#000;
+  font-size:16px;
+  float: left;
+  /*width: 40px;*/
+  width:30%;
+  margin-right: 10px; 
+}
+
+#sidebar div {
+  padding:5px 0 5px 0;
+  width:240px;
+}
+
+#footer {
+  position:relative;
+  bottom:0;
+  left:0;
+}
+
+#logo {
+  width:200px;
+  /*height:100px;*/
+  cursor:pointer;
+  float:left;
+  padding-left:3px;
+}
+
+#login {
+  display:none;
+}
+
+input[type=text], input[type=password], input[type=email], input[type=url], input[type=search], textarea, select {
+  border:1px solid #E5E5E5;
+  height:25px;
+  border-radius:3px;
+  font-size:18px;
+}
+
+input[type=text]:hover, input[type=password]:hover, input[type=email]:hover, input[type=url]:hover, input[type=search]:hover, textarea:hover, select:hover {
+  border:1px solid #1E90FF;
+}
+
+button, input[type=submit] {
+  color:#fff;
+  height:25px;
+  font-size:18px;
+  border:none;
+  border-radius:5px;
+  background:#32AA32;
+  /*background:#FFFFFF;
+  background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#FFFFFF), to(#EEE));
+  background:-moz-linear-gradient(0% 90% 90deg, #EEE, #FFF);*/
+}
+
+button:hover,  input[type=submit]:hover {
+  
+  background:#139113;
+  /*background:#4195DD;
+  background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#003C82), to(#4195DD));
+  background:-moz-linear-gradient(0% 90% 90deg, #4195DD, #003C82);*/
+  cursor:pointer;
+}
+
+#userPhoto {
+  border-radius:5px;
+  float:left;
+}
+
+#profileButton, #logoutButton {
+  float:right;
+}
+
+#signUp {
+  /*width:500px;
+  margin:auto;*/
+}
+
+.success {
+  color:#00FF00;
+  font-size:16px;
+}
+
+.error {
+  color:#FF0000;
+  font-size:16px;
+}
+
+.idea {
+  position:relative;
+  min-height:170px;
+  padding-top:10px !important;
+  padding-bottom:10px !important;
+  border-bottom: solid 10px #86DF86;
+  margin-bottom:10px;
+}
+
+/*.idea:hover {
+  background:#F2F2F2;
+}*/
+
+.ideaVotes {
+  float:left;
+  text-align:center;
+  line-height:50px;
+  font-size:30px;
+  color:#fff;
+  width:48px;
+}
+
+.ideaUp {
+  /*background:#71C837;*/
+  padding:0;
+  background-image:url('images/votes.png');
+  background-position:0px 0px;
+  width:49px;
+  height:63px;
+  line-height:70px;
+  cursor:pointer;
+}
+
+.ideaDown {
+  background-image:url('images/votes.png');
+  background-position:0px 63px;
+  width:49px;
+  height:63px;
+  line-height:50px;
+  cursor:pointer;
+}
+
+.ideaAbstention {
+  background:#E5E5E5;
+  width:49px;
+  height:49px;
+  border-radius:50px;
+  cursor:pointer;
+}
+
+.ideaTools {
+  position:absolute;
+  bottom:0;
+  right:0;
+  clear:both;
+}
+
+.ideaUp:hover {
+  background-image:url('images/votes.png');
+  background-position:49px 0px;
+}
+
+.ideaDown:hover {
+  background-image:url('images/votes.png');
+  background-position:49px 63px;
+}
+
+.ideaAbstention:hover {
+  background:#B3B3B3;
+}
+
+.ideaWrapper {
+  margin-left:10px;
+}
+
+.ideaTitle {
+  font-size:18px;
+  cursor:pointer;
+  display:inline;
+  color:#32AA32;
+}
+
+.ideaTitle:hover {
+  color:#139113;
+  text-decoration:underline;
+}
+
+.ideaContent {
+  /*float:left;*/
+  /*font-size:16px;*/
+  /*max-width:900px;*/
+}
+
+.ideaMore {
+  float:right;
+  clear:both;
+}
+
+.ideaMore {
+  clear:none;
+  display:inline;
+  cursor:pointer;
+  font-size:14px;
+  position:absolute;
+  top:0;
+  right:0;
+}
+
+.name {
+  font-size:24px;
+  padding-left:80px;
+}
+
+.user {
+  font-size:18px;
+  padding-left:80px;
+}
+
+.info {
+  font-size:18px;
+  padding-left:80px;
+}
+
+#profile .email {
+  font-size:18px;
+  padding-left:80px;
+  float:right;
+}
+
+.photo {
+  float:left;
+  border-radius:5px;
+}
+
+#newIdeaButton {
+  background:#80FF80;
+  /*clear:both;
+  width:200px;
+  height:50px;
+  font-size:30px;
+  float:right;*/
+}
+
+#newIdeaButton:hover {
+  background:#00FF00;
+}
+
+.category {
+  background:ge;
+}
+
+#topbar {
+  float:right;
+}
+
+#search {
+}
+
+#loginBar {
+  display:inline;
+  font-weight:normal;
+}
+
+.cke_skin_kama * {
+  margin-left:200px;
+  padding:1px !important;
+}
+
+.highlight { background-color: yellow; margin:0; padding:0;}
+
+#categories {
+  /*background:#32AA32;
+  border:0px;
+  color:#fff;*/
+}
+
+#categories:hover {
+  /*background:#139113;*/
+}
+
+#categories button {
+  text-align:left;
+  width:100%;
+  margin:5px 5px 0 0;
+}
+
+#categories .num {
+  float:right;
+  color:#353735;
+}
+
+.loading {
+  text-align:center;
+}
+
+.spinner {
+  width:48px;
+  height:48px;
+  margin:auto;
+}
+
+#photoPreview {
+  display:inline;
+}
+
+#content label {    
+float: left;    
+width: 200px;    
+margin-right: 10px;
+font-size:16px;
+}
+
+#login input { 
+/*width: 180px;*/
+width:65%;
+}
+
+#login label { 
+font-size:14px;
+}
+
+.pagination {
+  text-align:center;
+}
+
+.currentPage {
+  width:1.5em;
+  height:2em;
+}
+
+.name {
+  cursor:pointer;
+}
+
+label.error { float: right !important; color: red; padding-left: .5em; vertical-align: top; }
+
+.password-meter {
+  float:right;
+}
+
+input[type=radio] {
+  font-size:22px;
+}
+
+#commentsIframe {
+  display:none;
+  width:0;
+  height:0;
+}
+
+#commentsHeader {
+  width:100%;
+  height:30px;
+  margin-bottom:30px;
+  background:#32AA32;
+}
+
+#commentsReturn {
+  font-size:24px;
+  cursor:pointer;
+  display:inline;
+  color:#fff;
+  text-decoration:none;
+}
+
+#commentsTitle {
+  font-size:24px;
+  cursor:pointer;
+  display:inline;
+  color:#fff;
+  text-decoration:none;
+  float:right;
+}
