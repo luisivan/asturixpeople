@@ -10,6 +10,12 @@ class Db {
 	public function __construct() {
 		$this->db = new mysqli(DB_HOST, DB_USER, DB_PASS, DB);
 		$this->db->set_charset("utf8");
+		require_once 'purifier/HTMLPurifier.standalone.php';
+		
+		$config = HTMLPurifier_Config::createDefault();
+		$config->set('Core.Encoding', 'UTF-8');
+		$config->set('HTML.Doctype', 'HTML 4.01 Transitional');
+		$this->purifier = new HTMLPurifier($config);
 	}
 
 	public function writeUser($user, $pass, $email, $name, $info, $photo) {
@@ -26,6 +32,7 @@ class Db {
 		//$pass = $this->db->real_escape_string($pass);
 		$pass = sha1($pass);
 		$name = $this->db->real_escape_string($name);
+		$info = $this->purifier->purify($info);
 		$info = $this->db->real_escape_string($info);
 		$photo = $this->db->real_escape_string($photo);
 		$result = $this->db->query("INSERT INTO users VALUES ('', '". $user ."', '". $pass ."', '". $email ."', '". $name ."', '". $info ."', '". $photo ."')");
@@ -34,7 +41,9 @@ class Db {
 	}
 
 	public function writeIdea($name, $description, $user, $cat) {
+		$name = $this->purifier->purify($name);
 		$name = $this->db->real_escape_string($name);
+		$description = $this->purifier->purify($description);
 		$description = $this->db->real_escape_string($description);
 		$user = $this->db->real_escape_string($user);
 		$cat = $this->db->real_escape_string($cat);
@@ -57,7 +66,9 @@ class Db {
 				echo '<script>alert("'. _('Hey this email is already in use!') . '")</script>';
 			}
 		}
+		$name = $this->purifier->purify($name);
 		$name = $this->db->real_escape_string($name);
+		$info = $this->purifier->purify($info);
 		$info = $this->db->real_escape_string($info);
 		$photo = $this->db->real_escape_string($photo);
 		$result = $this->db->query("UPDATE users SET user='". $user ."', email='". $email ."', name='". $name ."', info='". $info ."', photo='". $photo ."' WHERE id='".$id."'");
@@ -72,7 +83,9 @@ class Db {
 	}
 
 	public function updateIdea($id, $name, $description, $open, $cat) {
+		$name = $this->purifier->purify($name);
 		$name = $this->db->real_escape_string($name);
+		$description = $this->purifier->purify($description);
 		$description = $this->db->real_escape_string($description);
 		$open = $this->db->real_escape_string($open);
 		$cat = $this->db->real_escape_string($cat);

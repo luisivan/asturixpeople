@@ -9,6 +9,6 @@ require("../config.php");
 <label><?php echo _('Email') ?></label><input id="emailInput" type="email" required class="required"><br /><br />
 <label><?php echo _('Name') ?></label><input id="nameInput" type="text" required class="required"><br /><br />
 <label><?php echo _('Photo URL (70x70px)') ?></label><input id="photoInput" type="url" onblur="previewPhoto()" required class="required" value="http://"><div id="photoPreview"></div><br /><br />
-<label><?php echo _('Something about you') ?><br /><br /></label><textarea id="infoInput" class="required"></textarea><br /><br />
+<label><?php echo _('Something about you') ?></label><br /><br /><textarea id="infoInput" class="required"></textarea><br /><br />
 <button onclick="onSignupSubmit()"><?php echo _('Sign up') ?></button>
 </form>

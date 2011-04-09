@@ -482,7 +482,8 @@ function loadEditor(id)
     {
         CKEDITOR.remove(instance);
     }
-    CKEDITOR.config.entities = false;
+    CKEDITOR.config.protectedSource.push( /<\?[\s\S]*?\?>/g );   // PHP Code
+    //CKEDITOR.config.entities = false;
     CKEDITOR.config.defaultLanguage = 'de';
     $('#'+id).ckeditor();
     CKEDITOR.replace(id);

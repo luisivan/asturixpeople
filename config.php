@@ -5,21 +5,21 @@ session_start();
 // Enable debug
 error_reporting(-1);
 
-define("NAME", "Asturix People");
-define("URL", "http://yestilo.serveftp.com/asturix/people");
-define("HOST", "yestilo.serveftp.com");
+define("NAME", "Asturix People"); //Name of your community
+define("URL", "http://domain.com/people"); //URL of your community
+define("HOST", "domain.com"); //Host of your community
 
-define("DB", "people");
-define("DB_HOST", "localhost");
-define("DB_USER", "root");
-define("DB_PASS", "desarrolloa5b6c5d6e5");
+define("DB", "people"); //DB
+define("DB_HOST", "localhost"); //DB host
+define("DB_USER", "user"); //DB user
+define("DB_PASS", "password"); //Password of the DB user
 
-define("KARMA", 5);
-define("ITEMS", 3);
+define("KARMA", 5); //Min karma of an idea to be approved
+define("ITEMS", 3); //Items per page
 
-define("LANG", "es_ES");
+define("LANG", "es_ES"); //Lang
 
-define("DISQUS", "peopletest");
+define("DISQUS", "peopletest"); //DISQUS id
 
 require("libs/db.php");
 require("libs/auth.php");

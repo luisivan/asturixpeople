@@ -317,7 +317,7 @@ button:hover,  input[type=submit]:hover {
 
 .cke_skin_kama * {
   margin-left:200px;
-  padding:1px !important;
+  /*padding:1px !important;*/
 }
 
 .highlight { background-color: yellow; margin:0; padding:0;}

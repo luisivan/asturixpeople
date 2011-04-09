@@ -42,13 +42,10 @@ require("config.php");
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="libs/ckeditor/ckeditor.js"></script>
 <script type="text/javascript" src="libs/ckeditor/adapters/jquery.js"></script>
-<!--<script type="text/javascript" src="libs/jquery/jquery.validity.pack.js"></script>-->
 <script type="text/javascript" src="libs/jquery/jquery.validate.min.js"></script>
 <script type="text/javascript" src="libs/jquery/jquery.validate.password.js"></script>
-<!--<script type="text/javascript" src="libs/jquery/jquery.form.js"></script>-->
 <script src="libs/prettySociable/js/jquery.prettySociable.js" type="text/javascript" charset="utf-8"></script>
 <link rel="stylesheet" href="libs/prettySociable/css/prettySociable.css" type="text/css" media="screen" charset="utf-8" />
-<!--<link rel="stylesheet" href="libs/jquery/jquery.validity.css" type="text/css" media="screen" charset="utf-8" />-->
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
