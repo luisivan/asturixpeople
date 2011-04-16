@@ -3,23 +3,24 @@
 session_start();
 
 // Enable debug
-error_reporting(-1);
+//error_reporting(-1);
+error_reporting(0);
 
-define("NAME", "Asturix People"); //Name of your community
-define("URL", "http://domain.com/people"); //URL of your community
-define("HOST", "domain.com"); //Host of your community
+define("NAME", "Asturix People");
+define("URL", "http://domain.com/people");
+define("HOST", "domain.com");
 
-define("DB", "people"); //DB
-define("DB_HOST", "localhost"); //DB host
-define("DB_USER", "user"); //DB user
-define("DB_PASS", "password"); //Password of the DB user
+define("DB", "peopledb");
+define("DB_HOST", "localhost");
+define("DB_USER", "peopleuser");
+define("DB_PASS", "password");
 
-define("KARMA", 5); //Min karma of an idea to be approved
-define("ITEMS", 3); //Items per page
+define("KARMA", 50);
+define("ITEMS", 5);
 
-define("LANG", "es_ES"); //Lang
+define("LANG", "en_US");
 
-define("DISQUS", "peopletest"); //DISQUS id
+define("DISQUS", "people");
 
 require("libs/db.php");
 require("libs/auth.php");
@@ -34,14 +35,21 @@ $ui = new Ui($db);
 mb_language('uni');
 mb_internal_encoding('UTF-8');
 
-putenv('LC_ALL='.LANG.".utf8");
+$domain = 'locale';
+
 putenv('LANGUAGE='.LANG.".utf8");
 putenv('LANG='.LANG.".utf8");
 putenv('LC_ALL='.LANG.".utf8");
 putenv('LC_MESSAGES='.LANG.".utf8");
 setlocale(LC_ALL, LANG.".utf8");
 
-bindtextdomain("messages", "locale");
-textdomain("messages");
-bind_textdomain_codeset("messages", 'UTF-8'); 
+define('PROJECT_DIR', realpath('./'));
+if (strpos(PROJECT_DIR, 'ajax')) {
+define('LOCALE_DIR', '../locale');
+} else {
+define('LOCALE_DIR', 'locale');
+}
+bindtextdomain($domain, LOCALE_DIR);
+textdomain($domain);
+bind_textdomain_codeset($domain, 'UTF-8');
 ?>

@@ -379,7 +379,12 @@ class Db {
 		$page = $this->db->real_escape_string($page);
 		$items1 = $page * ITEMS;
 		$items = $items1 - ITEMS;
-		$ideas = $this->db->query("SELECT * FROM ideas WHERE name LIKE '%". $text ."%' OR description  LIKE '%". $text ."%' OR user LIKE '%". $text ."%' LIMIT ". $items .", ". ITEMS);
+		$date = substr(strtotime($text), 0, 5);
+		if ($date != 0) {
+			$ideas = $this->db->query("SELECT * FROM ideas WHERE name LIKE '%". $text ."%' OR description  LIKE '%". $text ."%' OR user LIKE '%". $text ."%' OR date LIKE '". $date ."%' LIMIT ". $items .", ". ITEMS);
+		} else {
+			$ideas = $this->db->query("SELECT * FROM ideas WHERE name LIKE '%". $text ."%' OR description  LIKE '%". $text ."%' OR user LIKE '%". $text ."%' LIMIT ". $items .", ". ITEMS);
+		}
 		return $ideas;
 	}
 

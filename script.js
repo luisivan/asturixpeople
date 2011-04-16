@@ -156,7 +156,7 @@ function onSignupSubmit() {
 		url: "ajax/signup.php",
 		data: {user:$("#userInput").val(),pass:$("#passInput").val(),email:$("#emailInput").val(),name:$("#nameInput").val(),info:CKEDITOR.instances.infoInput.getData(),photo:$("#photoInput").val()},
 		success: function(data) {
-			$("#content").append(data);
+			$("#content").prepend(data);
 		}
 	});
   }
@@ -478,22 +478,27 @@ function previewPhoto() {
 function loadEditor(id)
 {
     var instance = CKEDITOR.instances[id];
-    if(instance)
+    if (instance)
     {
-        CKEDITOR.remove(instance);
+        //CKEDITOR.remove(instance);
+        //CKEDITOR.instances[id].destroy();
+        delete CKEDITOR.instances[id];
     }
     CKEDITOR.config.protectedSource.push( /<\?[\s\S]*?\?>/g );   // PHP Code
     //CKEDITOR.config.entities = false;
-    CKEDITOR.config.defaultLanguage = 'de';
-    $('#'+id).ckeditor();
+    CKEDITOR.config.defaultLanguage = 'es';
+    //$('#'+id).ckeditor();
     CKEDITOR.replace(id);
 }
 
 function commentsIframe()
 {
-  $("#comments").contents().find("#dsq-content").css("margin-top", 40);
-  $("#comments").height($("#comments").contents().find("#dsq-content").height()+40);
-  $("#comments").contents().find("#dsq-content").resize(function() {
+  /*while ($("#comments").contents().find("#dsq-content").css("margin-top") != "0px")
+  {*/
+    $("#comments").contents().find("#dsq-content").css("margin-top", 40);
+    $("#comments").height($("#comments").contents().find("#dsq-content").height()+40);
+    $("#comments").contents().find("#dsq-content").resize(function() {
     $("#comments").height($("#comments").contents().find("#dsq-content").height()+40);
   });
+  //}
 }

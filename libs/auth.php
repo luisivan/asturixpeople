@@ -93,7 +93,8 @@ class Auth {
 		if ($success == false) {
 			echo '<script>alert("'. _('There was an error. Your username or your email may be registered') .'")</script>';
 		} else {
-			echo '<script>loadHome(); alert("'. _('Thanks! You are now registered! Check your mail!') .'";</script>';
+			//echo '<script>loadHome(); alert("'. _('Thanks! You are now registered! Check your mail!') .'");</script>';
+			echo '<script>loadHome(); alert("Gracias! Ya estás registrado");</script>';
 		}
 	}
 

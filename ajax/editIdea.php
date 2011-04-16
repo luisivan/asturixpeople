@@ -41,3 +41,8 @@ echo ' />'. _('Closed');
 ?>
 <button onclick="onIdeaUpdated(<?php echo $id ?>)"><?php echo _('Update idea!') ?></button>
 </form>
+<!--<script>
+$(document).ready(function () {
+	loadEditor("descInput");
+});
+</script>-->

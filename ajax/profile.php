@@ -18,3 +18,8 @@ if (!isset($_SESSION['user']))
 <button id="changePasswordButton" onclick="onPasswordButton()"><?php echo _('Change password') ?></button>
 <button id="deleteProfileButton" onclick="onProfileDeleted()"><?php echo _('Delete profile') ?></button>
 </form>
+<!--<script>
+$(document).ready(function () {
+	loadEditor("infoInput");
+});
+</script>-->

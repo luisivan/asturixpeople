@@ -1,9 +1,13 @@
+@font-face { font-family: Klavika; src: url('KlavikaRegular.otf'); }
+@font-face { font-family: Klavika; font-weight: bold; src: url('KlavikaBold.otf'); } 
+@font-face { font-family: Klavika; font-style: italic;  src: url('KlavikaItalic.otf'); } 
 html {height:100%}
 body {
   background:#fff;
+  font-family:Klavika,Helvetica,Arial,sans-serif;
   /*font-family:"Helvetica Neue",Helvetica,Arial,sans-serif;*/
-  font-family: Geneva, "MS Sans Serif", sans-serif;
-  font-size:12px;
+  /*font-family: Geneva, "MS Sans Serif", sans-serif;*/
+  font-size:14px;
   color:#353735;
   margin:0;
   padding:0;
@@ -75,7 +79,7 @@ img {
 
 #sidebar div {
   padding:5px 0 5px 0;
-  width:240px;
+  /*width:240px;*/
 }
 
 #footer {
@@ -85,7 +89,7 @@ img {
 }
 
 #logo {
-  width:200px;
+  width:250px;
   /*height:100px;*/
   cursor:pointer;
   float:left;
@@ -243,6 +247,7 @@ button:hover,  input[type=submit]:hover {
   /*float:left;*/
   /*font-size:16px;*/
   /*max-width:900px;*/
+  margin-left:40px;
 }
 
 .ideaMore {
@@ -322,10 +327,11 @@ button:hover,  input[type=submit]:hover {
 
 .highlight { background-color: yellow; margin:0; padding:0;}
 
-#categories {
+#categories button {
   /*background:#32AA32;
   border:0px;
   color:#fff;*/
+  font-size:15px;
 }
 
 #categories:hover {
@@ -424,4 +430,16 @@ input[type=radio] {
   color:#fff;
   text-decoration:none;
   float:right;
+}
+
+.twtr-widget {
+  display:inline;
+}
+
+/*.twtr-widget div {
+  display:inline;
+}*/
+
+.twtr-ft {
+  display:none;
 }

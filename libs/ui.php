@@ -25,7 +25,8 @@ class Ui {
 			echo _('[Approved]');
 		}
 		//echo $idea['karma'];
-		echo '</a><div class="ideaMore"><div class="date">' . date('Y-m-d', $idea["date"]) . '</div><div class="byUser" onclick="viewProfile(\''.$idea["user"].'\')">' . $idea["user"] . '</div></div>';
+		$date = date('d-m-Y', $idea["date"]);
+		echo '</a><div class="ideaMore"><div class="date" onclick="search(\'' . $date . '\')" id="' . $idea["id"] . '">' . $date . '</div><div class="byUser" onclick="viewProfile(\''.$idea["user"].'\')">' . $idea["user"] . '</div></div>';
 		$desc = $idea["description"];
 		if ($resumed==true)
 		{
@@ -40,11 +41,11 @@ class Ui {
 		{
 			echo '<script type="text/javascript" src="libs/jquery/jquery.resize.js"></script><script type="text/javascript" charset="utf-8">
 			      $(document).ready(function(){
-			      $.prettySociable();
 			      commentsIframe();
+			      $.prettySociable();
 			      });
 			      </script>';
-			echo '<iframe id="comments" onload="commentsIframe()" scrolling="no" allowtransparency="true" width="100%" height="auto" frameborder="0" src="ajax/comments.php?id='.$idea['id'].'"></iframe>';
+			echo '<iframe id="comments" onload="commentsIframe()" scrolling="no" allowtransparency="true" width="100%" height="auto" frameborder="0" src="ajax/comments.php?id='.$idea['id'].'" style="min-height:400px;"></iframe>';
 		}
 		}
 	}

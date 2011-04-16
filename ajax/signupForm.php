@@ -12,3 +12,8 @@ require("../config.php");
 <label><?php echo _('Something about you') ?></label><br /><br /><textarea id="infoInput" class="required"></textarea><br /><br />
 <button onclick="onSignupSubmit()"><?php echo _('Sign up') ?></button>
 </form>
+<!--<script>
+$(document).ready(function () {
+	loadEditor("infoInput");
+});
+</script>-->

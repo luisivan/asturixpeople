@@ -22,3 +22,8 @@ while ($cat = $cats->fetch_array(MYSQLI_ASSOC))
 <button onclick="onNewIdea()"><?php echo _('Send idea!') ?></button>
 <!--<input class="submit" type="submit" value="<?php echo _('Send idea!') ?>"/>-->
 </form>
+<!--<script>
+$(document).ready(function () {
+	loadEditor("descInput");
+});
+</script>-->

@@ -28,6 +28,40 @@ require("config.php");
 		  <button id="loginButton" onclick="onLoginButton()"><?php echo _('Login') ?></button><button id="forgotButton" onclick="onForgotButton()"><?php echo _('Forgot password?') ?></button>
   </div>
   <div id="categories" onchange="viewCategory(this.value)"></div>
+<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+<script>
+new TWTR.Widget({
+  version: 2,
+  type: 'search',
+  search: '#hashtag',
+  interval: 6000,
+  title: 'Title',
+  subject: 'Subject',
+  width: 'auto',
+  height: 300,
+  theme: {
+    shell: {
+      background: '#86DF86',
+      color: '#353735'
+    },
+    tweets: {
+      background: '#ffffff',
+      color: '#444444',
+      links: '#1985b5'
+    }
+  },
+  features: {
+    scrollbar: false,
+    loop: true,
+    live: true,
+    hashtags: true,
+    timestamp: true,
+    avatars: true,
+    toptweets: true,
+    behavior: 'default'
+  }
+}).render().start();
+</script>
 </div>
 <div id="content">
 </div>
@@ -41,7 +75,7 @@ require("config.php");
 <script type="text/javascript" src="urls.js"></script>
 <script type="text/javascript" src="script.js"></script>
 <script type="text/javascript" src="libs/ckeditor/ckeditor.js"></script>
-<script type="text/javascript" src="libs/ckeditor/adapters/jquery.js"></script>
+<!--<script type="text/javascript" src="libs/ckeditor/adapters/jquery.js"></script>-->
 <script type="text/javascript" src="libs/jquery/jquery.validate.min.js"></script>
 <script type="text/javascript" src="libs/jquery/jquery.validate.password.js"></script>
 <script src="libs/prettySociable/js/jquery.prettySociable.js" type="text/javascript" charset="utf-8"></script>
@@ -49,5 +83,6 @@ require("config.php");
 <!--[if lt IE 9]>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <![endif]-->
+<?php echo '<script type="text/javascript" src="libs/jquery/locale/messages_'.substr(LANG, 0, 2).'.js"></script>' ?>
 </body>
 </html>
